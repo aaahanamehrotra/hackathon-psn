@@ -3,55 +3,55 @@ module.exports = {
       if (req.user.subjects.includes("physics")) {
         return next();
       }
-    res.send('<h1>You dont hv access</h1>')
+    res.redirect('/accessdenied')
     },
     authMath: function(req, res, next) {
         if (req.user.subjects.includes("mathematics")) {
           return next();
         }
-      res.send('<h1>You dont hv access</h1>')
+      res.redirect('/accessdenied')
       },
       authEconomics: function(req, res, next) {
         if (req.user.subjects.includes("economics")) {
           return next();
         }
-      res.send('<h1>You dont hv access</h1>')
+      res.redirect('/accessdenied')
       },
       authAccountancy: function(req, res, next) {
         if (req.user.subjects.includes("accountancy")) {
           return next();
         }
-      res.send('<h1>You dont hv access</h1>')
+      res.redirect('/accessdenied')
       },
       authChemistry: function(req, res, next) {
         if (req.user.subjects.includes("chemistry")) {
           return next();
         }
-      res.send('<h1>You dont hv access</h1>')
+      res.redirect('/accessdenied')
       },
       authEnglish: function(req, res, next) {
         if (req.user.subjects.includes("english")) {
           return next();
         }
-      res.send('<h1>You dont hv access</h1>')
+      res.redirect('/accessdenied')
       },
       authGeography: function(req, res, next) {
         if (req.user.subjects.includes("geography")) {
           return next();
         }
-      res.send('<h1>You dont hv access</h1>')
+      res.redirect('/accessdenied')
       },
       authBiology: function(req, res, next) {
         if (req.user.subjects.includes("biology")) {
           return next();
         }
-      res.send('<h1>You dont hv access</h1>')
+      res.redirect('/accessdenied')
       },
       authMentor: function(req, res, next) {
         if (req.user.role === "mentor") {
           return next();
         }
-      res.send('<h1>Only Mentors hv access</h1>')
+        res.redirect('/accessdenied')
       },
       
 };

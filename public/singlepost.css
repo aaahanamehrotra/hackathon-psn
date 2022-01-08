@@ -1,0 +1,28 @@
+.single-post-1{
+  width: 80%;
+  margin: auto;
+}
+
+.single-title{
+  text-align: center;
+  padding-bottom: 5%;
+}
+.details-single{
+  display: flex;
+  justify-content: space-around;
+}
+
+.article-single{
+  padding: 5%;
+}
+.single-to-all{
+  text-decoration: none;
+  background-color: #F1F1F1;
+  padding: 1%;
+  color: black;
+}
+
+.single-to-all-div{
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,32 @@
+<div class="profile-container">
+<div class="profile">
+<h2 class="h2p" >Name</h2>
+<%= user.name %>
+</div>
+
+<div class="profile">
+<h2 class="h2p">Email</h2>
+<%= user.email %>
+</div>
+
+<div class="profile"> 
+<h2 class="h2p">Role</h2>
+<%= user.role%>
+</div>
+
+
+<div class="profile"> 
+<h2 class="h2p">subject(s)</h2>
+<div class="subjects-profile">
+<%for(var i = 0; i < user.subjects.length; i++){%><a
+  href="<%= user.subjects[i]%>" class="sub-single"
+>
+  <%= user.subjects[i]%> </a
+><%}%>
+</div>
+</div>
+
+
+<a href="/updateprofile" class="updateprofile">UPDATE</a>
+</div>
+<div>

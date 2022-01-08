@@ -51,6 +51,10 @@ a.new-post:hover {
   font-weight: bold;
 }
 
+button.reg-input, button.create-field{
+  cursor: pointer;
+}
+
 .reg-log {
   width: 50%;
   margin: auto;

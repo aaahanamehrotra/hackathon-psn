@@ -1,0 +1,12 @@
+.illustration-container {
+  width: 80vw;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.illustration {
+  vertical-align: middle;
+  margin: auto;
+  width: 30vw;
+}

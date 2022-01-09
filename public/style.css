@@ -407,6 +407,7 @@ a.allposts {
 
 h1 {
   color: #5390d9;
+  font-size:3rem;
 }
 #about {
   margin: 10%;
@@ -415,7 +416,7 @@ h1 {
 
 .about-title {
   text-align: center;
-  font-size: 4.5rem;
+  font-size: 3rem;
 }
 
 .about-image {
@@ -448,7 +449,6 @@ h1 {
 }
 
 .solution-div {
-  text-align: center;
   margin-bottom: 5%;
   margin-left: 30%;
   margin-right: 30%;
@@ -621,4 +621,11 @@ input.reg-input:focus {
 
 label {
   font-size: 18px;
+}
+
+
+.actualImg{
+  width: 80%;
+    margin: auto;
+    display: block;
 }

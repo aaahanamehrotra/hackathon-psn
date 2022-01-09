@@ -626,6 +626,6 @@ label {
 
 .actualImg{
   width: 80%;
-    margin: auto;
     display: block;
+    margin:10%;
 }

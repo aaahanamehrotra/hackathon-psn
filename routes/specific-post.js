@@ -45,7 +45,6 @@ router.post('/', async(req, res) => {
 router.get("/:id", async(req, res)=>{
     try{
         const post = await SpecificPost.findById(req.params.id);
-        console.log(post)
         const x = post
         res.render("singlesubpost", { data: post})
     }catch(err){

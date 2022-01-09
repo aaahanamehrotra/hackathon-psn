@@ -8,7 +8,6 @@ router.get('/login', (req, res) => res.render('login'));
 router.get('/register', (req, res) => res.render('register'));
 
 router.post('/register', (req, res) => {
-    console.log(req.body)
     const { name, email, phy, math, accountancy, economics, english, chemistry, biology, geography, role, password, password2 } = req.body;
     let errors = []
     if(!name || !email || !password || !password2){
@@ -44,7 +43,6 @@ router.post('/register', (req, res) => {
                     password2,
             });
         }else{
-            console.log(role)
             let subjects = []
             if(math === "on"){
                 subjects.push("mathematics")
@@ -70,7 +68,6 @@ router.post('/register', (req, res) => {
             if(geography === "on"){
                 subjects.push("geography")
             }
-        console.log(subjects)
             const newUser = new User({
                 name,
                 email,
@@ -109,8 +106,6 @@ router.get('/logout', (req, res) => {
 });
 
 router.post('/updprofile', async(req,res) => {
-    console.log("updatig")
-    console.log(req.body)
     const { name, email, phy, math, accountancy, economics, english, chemistry, biology, geography, role } = req.body;
     let errors = []
     if(!name){
